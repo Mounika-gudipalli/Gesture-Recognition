@@ -35,6 +35,22 @@ We will be deriving best model by trying out both of the architectures.
 
 ### Analysis
 
+We will be using Keras API with TensorFlow backend.
+
+- Reading the Images folder
+- Preprocessing the Images - Crop, Resize, Standardize
+- Data Augmentation if required
+- Choosing Appropriate Batch size, Number of epochs,Image size, Number of required frames in a video.
+- Creating Custom Generator Function
+- Applying various models - Conv2D+LSTM, Conv2D+GRU, Conv3D
+
+### Conclusion
+
+Conv2D+LSTM  model gave Training accuracy of 0.79 and Validation Accuracy of 0.76 which is close and indicates a good trained model. Since training accuracy and validation accuracy are nearby this model is not overfitting.
+Hence, we are choosing ConvLSTM to be the final model.
+
+
+
 
 
 
